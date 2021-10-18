@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shuffler.github.io/static/css/main.d10a19f8.chunk.css",
+    "main.css": "/shuffler.github.io/static/css/main.1e501c11.chunk.css",
     "main.js": "/shuffler.github.io/static/js/main.c86655b0.chunk.js",
     "main.js.map": "/shuffler.github.io/static/js/main.c86655b0.chunk.js.map",
     "runtime-main.js": "/shuffler.github.io/static/js/runtime-main.69829196.js",
@@ -10,13 +10,13 @@
     "static/js/3.09a92230.chunk.js": "/shuffler.github.io/static/js/3.09a92230.chunk.js",
     "static/js/3.09a92230.chunk.js.map": "/shuffler.github.io/static/js/3.09a92230.chunk.js.map",
     "index.html": "/shuffler.github.io/index.html",
-    "static/css/main.d10a19f8.chunk.css.map": "/shuffler.github.io/static/css/main.d10a19f8.chunk.css.map",
+    "static/css/main.1e501c11.chunk.css.map": "/shuffler.github.io/static/css/main.1e501c11.chunk.css.map",
     "static/js/2.303141ae.chunk.js.LICENSE.txt": "/shuffler.github.io/static/js/2.303141ae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69829196.js",
     "static/js/2.303141ae.chunk.js",
-    "static/css/main.d10a19f8.chunk.css",
+    "static/css/main.1e501c11.chunk.css",
     "static/js/main.c86655b0.chunk.js"
   ]
 }
