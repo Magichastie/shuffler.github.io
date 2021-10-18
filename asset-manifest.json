@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shuffler.github.io/static/css/main.a617e044.chunk.css",
+    "main.js": "/shuffler.github.io/static/js/main.17f651b3.chunk.js",
+    "main.js.map": "/shuffler.github.io/static/js/main.17f651b3.chunk.js.map",
+    "runtime-main.js": "/shuffler.github.io/static/js/runtime-main.e3971371.js",
+    "runtime-main.js.map": "/shuffler.github.io/static/js/runtime-main.e3971371.js.map",
+    "static/js/2.3446ab5b.chunk.js": "/shuffler.github.io/static/js/2.3446ab5b.chunk.js",
+    "static/js/2.3446ab5b.chunk.js.map": "/shuffler.github.io/static/js/2.3446ab5b.chunk.js.map",
+    "static/js/3.85ce4bff.chunk.js": "/shuffler.github.io/static/js/3.85ce4bff.chunk.js",
+    "static/js/3.85ce4bff.chunk.js.map": "/shuffler.github.io/static/js/3.85ce4bff.chunk.js.map",
+    "index.html": "/shuffler.github.io/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/shuffler.github.io/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.3446ab5b.chunk.js.LICENSE.txt": "/shuffler.github.io/static/js/2.3446ab5b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/shuffler.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3971371.js",
+    "static/js/2.3446ab5b.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.17f651b3.chunk.js"
+  ]
+}
