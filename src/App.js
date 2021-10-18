@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      items: []
+    }
+
+    for (let i = 1; i <= 60; i++) {
+      this.state.items.push(i)
+    }
+
+    this.state.items = this.shuffle(this.state.items)
+  }
+
+  shuffle(arr) {
+    let selected, swap
+
+    for(let i = arr.length - 1; i > 0; i--) {
+      selected = Math.floor(Math.random() * (i + 1))
+
+      swap = arr[i]
+      arr[i] = arr[selected]
+      arr[selected] = swap
+    }
+
+    return arr
+  }
+
+  render() {
+    return (
+      <div class="container">
+        {this.state.items.map(item => (
+          <div>{item}</div>
+        ))}
+      </div>
+    )
+  }
 }
+
 
 export default App;
