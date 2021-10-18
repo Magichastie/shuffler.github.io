@@ -1,12 +1,22 @@
 import './App.css'
 import React from 'react'
+import { pulse } from 'react-animations'
+import Radium, {StyleRoot} from 'radium'
+
+const styles = {
+  pulse: {
+    animation: 'x 4s',
+    animationName: Radium.keyframes(pulse, 'pulse')
+  }
+}
 
 class App extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      items: []
+      items: [],
+      highlighted: 0
     }
 
     for (let i = 1; i <= 60; i++) {
@@ -14,6 +24,13 @@ class App extends React.Component {
     }
 
     this.state.items = this.shuffle(this.state.items)
+
+    setTimeout(() => this.moveIt(1), 1000)
+  }
+
+  moveIt(next) {
+    this.setState({...this.state, highlighted: next})
+    setTimeout(() => this.moveIt(next + 1), 1000)
   }
 
   shuffle(arr) {
@@ -32,11 +49,22 @@ class App extends React.Component {
 
   render() {
     return (
+      <StyleRoot>
       <div class="container">
-        {this.state.items.map(item => (
-          <div>{item}</div>
-        ))}
+        {this.state.items.map(item => {
+          if(this.state.highlighted === item) {
+            return (
+              <div key={item.toString()} class="highlighted">{item}</div>
+              )
+          }
+
+            return (
+            <div key={item.toString()} id={item.toString()}>{item}</div>
+            )
+        }
+        )}
       </div>
+      </StyleRoot>
     )
   }
 }
